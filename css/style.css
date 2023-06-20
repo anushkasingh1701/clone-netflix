@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+body{
+    background-color:rgba(0, 8, 29, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 11vh;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 3rem;
+    
+}
+
+.logo{
+    width: 9.25rem;
+    height: 2.5rem;
+   
+}
+
+
+.eng-btn{
+    width: 8.4rem;
+    height: 2rem;
+    background-color: black;
+    border: white solid 1px;
+    color: white;
+    font-size: 2vh;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    
+    
+}
+.sign-in-btn{
+    width: 5rem;
+    height: 2rem;
+    font-size: 14px;
+    background-color: red;
+    border-radius: 0.25rem;
+    color: white;
+}
+
+.cover{
+   min-height: 37.5rem;
+   width: 90%;
+    background-image: linear-gradient(65.68deg, rgba(0, 8, 29, 0.6) 9.51%, rgba(53, 13, 49, 0.6) 72.89%, rgba(132, 5, 25, 0.6) 101.01%),linear-gradient(102.21deg, rgba(0, 0, 0, 0.04) 16.09%, rgba(1, 1, 1, 0.17) 39.27%, rgba(1, 1, 1, 0.24) 64.25%, rgba(4, 4, 4, 0.8) 96.63%),url(https://assets.nflxext.com/ffe/siteui/vlv3/ceb3b1eb-2673-4dd9-a6e3-0cd7a5e130ee/7540883d-de7a-4a69-8cc6-c3885d3a2b0b/IN-en-20230522-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    border-radius: 1%;
+   display: flex;
+   align-items: center;
+}
+
+
+.cover-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+@media screen and (max-width:414px) {
+    .cover-content h1{
+        font-size: 2rem;
+        font-weight: 700;
+        width: 100%;
+    }
+    .email-btn{
+        margin-bottom: 5%;
+        
+    }
+    .cover{
+        display: flex;
+        flex-direction: row;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    
+    
+    .cards p{
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+        padding:1rem 0;
+    }
+    .card-heads{
+        margin-bottom: 0px;
+    }
+    .flist{
+        flex-direction: column;
+        gap: 0;
+    
+    }
+    .after-faq .email-btn{
+        margin-left: 4rem;
+    }
+    .after-faq .get-started-btn{
+        margin-left: 4rem;
+    }
+    .logo{
+        width: 5.5625rem;
+    height: 1.5rem;
+    }
+    nav{
+        padding: 3vh 1rem
+    }
+    .cover-content{
+        padding: 3rem;
+        text-align: center;
+        
+    }
+    .eng-btn{
+        width: 5rem;
+    }
+
+
+    
+
+
+    
+}
+
+
+.cover-content{
+    padding-left: 5rem;
+}
+
+.email-btn{
+    fill: currentcolor;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 58%;/*386px*/
+    height: 1rem;
+    padding: 1rem;
+   
+    background-color:rgba(0,0, 0, 0.5);
+    color: white;
+    border-radius:0.3rem;
+    border: 1px grey solid;
+}
+
+.get-started-btn{
+    background-color: red;
+    color: white;
+   
+    height: 3.3rem;
+    width: 15rem;
+    border: 0px;
+    border-radius: 0.3rem;
+    font-size: 24px;
+   
+    font-weight: 500px;
+}
+
+.container-2{
+    background-image: linear-gradient(146.51deg, rgba(0, 8, 29, 0.75) 0%, rgba(53, 13, 49, 0.6) 80.34%, rgba(132, 5, 25, 0.6) 110.79%);
+    margin-top: 2%;
+    width: 90%;
+    border-radius: 1%; 
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+   align-items: center;
+   
+}
+
+
+.cards{
+    display: flex;
+    /*flex-direction: row;*/
+
+}
+
+.box{
+    height: 8px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.card-heads{
+    font-size: 3rem;
+    font-weight:900 ;
+}
+.card-image{
+    height: 95%;
+    width: 100%;
+}
+.container-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3%;
+    border-bottom: 5px rgba(255, 255, 255, 0.1) solid;
+}
+.FAQS{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    margin: 5%;
+}
+.FAQS h1{
+    font-size: 3rem;
+    align-self: center;
+    margin-bottom: 5%;
+}
+.Qbox{
+    height: 2.5rem;
+    background-color:rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+
+.Abox{
+    overflow: hidden;
+    visibility: hidden;
+    max-height: 0;
+    margin-top: 1px;
+    font-size: 1.5rem;
+    /*padding: 1.5rem;*/
+    background-color:rgba(255, 255, 255, 0.1);
+    
+}
+
+
+
+.plus-b{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: transparent;
+    font-size: 2rem;
+    color: white;
+    overflow-y: hidden;
+    border: none;
+    cursor: pointer;   
+    transition-delay: 2s; 
+}
+
+
+.after-faq p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.flist ul {
+    list-style: none;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-right: 15rem;
+}
+.flist{
+    display: flex;
+    padding: 1rem 0;
+
+}
+.footer{
+   width: 100%;
+   padding-top: 10vh;
+   padding-left: 28vw;
+   padding-bottom: 5vh;
+   
+   
+}
+.flistdiv li{
+    padding-top: 1rem;
+}
+.footer .eng-btn{
+    margin: 1rem 0;
+    
+}
