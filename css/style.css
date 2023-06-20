@@ -36,17 +36,26 @@ nav{
 
 
 .eng-btn{
-    width: 8.4rem;
+    align-content: center;
+    width: 7.8vw;
     height: 2rem;
     background-color: black;
-    border: white solid 1px;
+    border: grey solid 1px;
+    
     color: white;
     font-size: 2vh;
     border-radius: 0.25rem;
-    margin-right: 0.5rem;
-    
-    
+    /* margin-right: 0.5rem; */
 }
+.fa-globe{
+    margin-right:0.5rem;
+    margin-top: 0.5rem;
+}
+.fa-caret-down{
+    margin-left: 0.5rem;
+}
+
+
 .sign-in-btn{
     width: 5rem;
     height: 2rem;
@@ -54,6 +63,18 @@ nav{
     background-color: red;
     border-radius: 0.25rem;
     color: white;
+    align-content: center;
+}
+.get-started-btn:hover{
+    background-color: rgb(193,17,25);
+}
+.sign-in-btn:hover{
+    background-color: rgb(193,17,25);
+
+}
+.cover-btn{
+    display: flex;
+    gap: 2%;
 }
 
 .cover{
@@ -64,10 +85,12 @@ nav{
    display: flex;
    align-items: center;
 }
-
+.fa-globe{
+    color: white;
+}
 
 .cover-content h1{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 900;
 }
 @media screen and (max-width:414px) {
@@ -117,12 +140,18 @@ nav{
         padding: 3vh 1rem
     }
     .cover-content{
-        padding: 3rem;
-        text-align: center;
+        padding: 0rem;
+        
         
     }
     .eng-btn{
         width: 5rem;
+    }
+    .cover-btn{
+        flex-direction: column;
+    }
+    .email-btn{
+        overflow: hidden;
     }
 
 
@@ -134,9 +163,25 @@ nav{
 
 
 .cover-content{
-    padding-left: 5rem;
+    /*padding-left: 5rem;*/
+    padding: 5.875rem min(10%, 6.25rem) 6.25rem;
 }
+/*.email-btn:focus{
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 10px;
+  }*/
+  
+input:focus::placeholder{
+    font-size: 10px;
+    top: 0;
 
+
+}
+  
+  .email-btn:focus-visible {
+    outline: none;
+  }
 .email-btn{
     fill: currentcolor;
     font-size: 1rem;
@@ -150,20 +195,35 @@ nav{
     border-radius:0.3rem;
     border: 1px grey solid;
 }
+.email-btn:focus{
+    outline:1px double white;
+    
+}
+input:focus::placeholder{
+    font-size: 10px;
+    position: absolute;
+    top: 0.2rem;
+    transition:250ms;
+}
 
 .get-started-btn{
     background-color: red;
     color: white;
-   
+    font-weight: 500;
     height: 3.3rem;
     width: 15rem;
     border: 0px;
     border-radius: 0.3rem;
     font-size: 24px;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
     font-weight: 500px;
 }
-
+.fa-angle-right{
+    
+}
 .container-2{
     background-image: linear-gradient(146.51deg, rgba(0, 8, 29, 0.75) 0%, rgba(53, 13, 49, 0.6) 80.34%, rgba(132, 5, 25, 0.6) 110.79%);
     margin-top: 2%;
@@ -291,4 +351,7 @@ nav{
 .footer .eng-btn{
     margin: 1rem 0;
     
+}
+#GS2{
+    margin-top: 0.5rem;
 }
